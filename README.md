@@ -1,4 +1,4 @@
-# Drag and Drop - To-Do List
+# To-Do List - Drag and Drop 
 
 This page was made to learn about Drag 'n Drop events from HTML. The code consists only of HTML, CSS, and JavaScript.
 
