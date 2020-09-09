@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Kanban Board</title>
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="boards">
-    <div class="board">
-      <h3>To do</h3>
-      <div class="dropzone red">
-        <div class="card" draggable="true">
-          <div class="status red"></div>
-          <div class="content">To Study</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Kanban Board</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="boards">
+      <div class="board">
+        <div class="board-header">
+          <h3>To do</h3>
+          <input type="text" placeholder="Type a to-do title">     
+          <a class="btn-add">
+            <img src="assets/add-orange-18dp.svg" alt="" class="icon">
+          </a>
         </div>
-        <div class="card" draggable="true">
-          <div class="status red"></div>
-          <div class="content">Work-out</div>
-        </div>
-        <div class="card" draggable="true">
-          <div class="status red"></div>
-          <div class="content">To read</div>
-        </div>
+        <div class="dropzone red"></div>        
       </div>
-    </div>
-    <div class="board">
-      <h3>Doing</h3>
-      <div class="dropzone blue"></div>
-    </div>
-    <div class="board">
-      <h3>Done</h3>
-      <div class="dropzone green"></div>
-    </div>
-  </div>
+      <div class="board">      
+        <div class="board-header">
+          <h3>Doing</h3>
+        </div>
+        <div class="dropzone blue"></div>
+      </div>
+      <div class="board">      
+        <div class="board-header">
+          <h3>Done</h3>
+        </div>
+        <div class="dropzone green"></div>
+      </div>
 
-  <script src="./script.js"></script>
-</body>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
 </html>
